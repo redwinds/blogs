@@ -57,6 +57,7 @@ TL;DR:
 
 ## 我的加密/解密方法
 ```C#
+// 代码按原样提供，可随意使用，但不对其安全性作任何保证。
 string Encrypt(string password, string purpose, byte[] plainBytes)
 {
 	byte[] key = PasswordToKey(password, purpose);
@@ -92,6 +93,7 @@ byte[] Decrypt(string packedString, string password, string purpose)
 
 其中公共方法：
 ```C#
+// 代码按原样提供，可随意使用，但不对其安全性作任何保证。
 byte[] PasswordToKey(string password, string purpose)
 {
 	using (var hmac = new HMACMD5(Encoding.UTF8.GetBytes(purpose)))
@@ -140,6 +142,7 @@ byte[] Pack(byte version, byte[] iv, byte[] cipherBytes)
 
 测试代码：
 ```C#
+// 代码按原样提供，可随意使用，但不对其安全性作任何保证。
 string purpose = "这个算法是用来搞SSO的";
 // 返回：AcfCe3AQcmNkeNThv-u09H_HyGKy_iRy-7uGiW0IZOHI
 Encrypt("密码here", purpose, Encoding.UTF8.GetBytes("Hello World"));
