@@ -45,6 +45,7 @@ using (var img = Image.FromStream(File.OpenRead(@"D:\_\WatermarkDemo.png")))
 | `Direct2D`    | 基于硬件加速的2D图形渲染 | [Go](https://docs.microsoft.com/en-us/windows/desktop/direct2d/direct2d-portal)             |
 | `WIC`         | 高性能图片编码、解码     | [Go](https://docs.microsoft.com/en-us/windows/desktop/wic/-wic-about-windows-imaging-codec) |
 | `DirectWrite` | 基于硬件加速的文字渲染   | [Go](https://docs.microsoft.com/en-us/windows/desktop/directwrite/direct-write-portal)      |
+
 如果您打开链接看了一眼，就不难看出，这些技术都是基于`COM`的，但我们使用`.NET`，不是吗？
 
 ## 好在我们有`SharpDX`
