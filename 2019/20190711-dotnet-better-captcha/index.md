@@ -163,8 +163,10 @@ byte[] SaveD2DBitmap(int width, int height, string text)
         return ms.ToArray();
     }
 }
-
 ```
+
+注意此代码使用了`using var`语句，是C# 8.0的`using declaration`功能，可以用`using (var )`语句代替。
+
 使用方式：
 ```csharp
 byte[] captchaBytes = SaveD2DBitmap(200, 100, "Hello");
@@ -313,7 +315,9 @@ byte[] SaveD2DBitmap(int width, int height, string text)
 ![Direct2D特效](./d2d-gif3.gif)
 
 # 结语
-`SharpDX`是`C#`到`DirectX`的转换层。一个坏消息是，上图中使用的[SharpDX](https://github.com/sharpdx/sharpdx)已经停止维护了，但目前还没找到可以用于替换的库（可能由于它太好用了）。
+最终的代码生成效果，可以从[这里下载](./WIC-Captcha-Gif-Ripple.linq)，用[LINQPad 6](http://linqpad.com)打开。
+
+本文使用的是`SharpDX`，是`C#`到`DirectX`的转换层。一个坏消息是，上图中使用的[SharpDX](https://github.com/sharpdx/sharpdx)已经停止维护了，但目前还没找到可以用于替换的库（可能由于它太好用了）。
 
 以前我经常将`Direct2D`用于游戏，但最近越来越多的时候`Direct2D`已经用于解决实际问题。由于`Direct2D`的高颜值、高性能，实际上，`Direct2D`已经无处不在，浏览器/Word/Excel等日常软件都是深度集成`Direct2D`的应用。相信`Direct2D`可以用于更多的场景中。
 
