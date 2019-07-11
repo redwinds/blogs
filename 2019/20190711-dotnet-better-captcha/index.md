@@ -42,7 +42,7 @@ byte[] GetImage(int width, int height, string text)
 }
 
 ```
-效果（Gif是由LINQPad生成多次截图而来，实际为静态图）：
+效果（Gif是由[LINQPad](https://linqpad.com)生成多次截图而来，实际为静态图）：
 
 ![System.Drawing的效果](./basic-system-drawing.gif)
 
@@ -59,7 +59,7 @@ using (var pen = new Pen(brush, 3))
     }
 }
 ```
-效果（Gif是由LINQPad生成多次截图而来，实际为静态图）：
+效果（Gif是由[LINQPad](https://linqpad.com)生成多次截图而来，实际为静态图）：
 
 ![System.Drawing加入线条](./basic-system-drawing-with-line.gif)
 
@@ -90,7 +90,7 @@ public class CaptchaResult
     public DateTime Timestamp { get; set; }
 }
 ```
-生成的效果如下（Gif是由LINQPad生成多次截图而来，实际为静态图）：
+生成的效果如下（Gif是由[LINQPad](https://linqpad.com)生成多次截图而来，实际为静态图）：
 
 ![System.Drawing加入线条](./system-drawing-ediwang.gif)
 
@@ -169,13 +169,13 @@ byte[] SaveD2DBitmap(int width, int height, string text)
 ```csharp
 byte[] captchaBytes = SaveD2DBitmap(200, 100, "Hello");
 ```
-效果（Gif是由LINQPad生成多次截图而来，实际为静态图）：
+效果（Gif是由[LINQPad](https://linqpad.com)生成多次截图而来，实际为静态图）：
 
 ![Direct2D简单版](./d2d-simple.gif)
 
 可以注意到，`Direct2D`生成的文字没有`System.Drawing`那样的锯齿。
 
-如果取消里面的两行注释，可以得到更加扭曲和旋转的效果（Gif是由LINQPad生成多次截图而来，实际为静态图）：
+如果取消里面的两行注释，可以得到更加扭曲和旋转的效果（Gif是由[LINQPad](https://linqpad.com)生成多次截图而来，实际为静态图）：
 
 ![Direct2D带旋转扭曲](./d2d-rotation-skew.gif)
 
@@ -191,7 +191,7 @@ for (var i = 0; i < 4; ++i)
         brush, 3.0f);
 }
 ```
-效果（Gif是由LINQPad生成多次截图而来，实际为静态图）：
+效果（Gif是由[LINQPad](https://linqpad.com)生成多次截图而来，实际为静态图）：
 
 ![Direct2D带线条](./d2d-with-line.gif)
 
@@ -295,7 +295,7 @@ byte[] SaveD2DBitmap(int width, int height, string text)
     return ms.ToArray();
 }
 ```
-效果如下（Gif是由LINQPad生成多次截图而来，实际为静态图）：
+效果如下（Gif是由[LINQPad](https://linqpad.com)生成多次截图而来，实际为静态图）：
 
 ![Direct2D特效](./d2d-effect.gif)
 
